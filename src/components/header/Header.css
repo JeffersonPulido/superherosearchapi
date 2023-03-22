@@ -1,0 +1,36 @@
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2.5vh 0%;
+}
+
+.containerTitle h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 6vh;
+}
+
+.containerTitle h1 span {
+  color: var(--yellow-color);
+}
+
+.fa-magnifying-glass {
+  color: white;
+  font-weight: bold;
+  font-size: 5vh;
+  margin-right: 2%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .containerTitle h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3vh;
+  }
+  .fa-magnifying-glass {
+    font-size: 3vh;
+  }
+}

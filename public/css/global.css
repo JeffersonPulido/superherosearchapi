@@ -6,7 +6,7 @@
   --red-color: #e62222;
   --light-color: #fff;
   --grey-color: #888888;
-  --yellow-color: #f2c10e;
+  --yellow-color: #ffc300;
 }
 
 * {
@@ -27,5 +27,5 @@ body {
   line-height: 1.6;
   font-family: var(--chakra-font);
   background: rgb(73,80,87);
-  background: linear-gradient(90deg, rgba(73,80,87,1) 0%, rgba(34,34,34,1) 50%, rgba(73,80,87,1) 100%);
+  background: linear-gradient(180deg, rgba(73,80,87,1) 0%, rgba(34,34,34,1) 50%, rgba(73,80,87,1) 100%);
 }

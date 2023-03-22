@@ -3,7 +3,7 @@
 }
 
 .academy{
-    color: #ffc300;
+    color: var(--yellow-color);
 }
 
 .logo {
