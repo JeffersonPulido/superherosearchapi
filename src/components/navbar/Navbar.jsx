@@ -8,7 +8,7 @@ export const Navbar = () => {
         <>
             <nav className='navbar navbar-expand-lg navbar-light bg-dark sticky-top'>
                 <div className='container'>
-                    <a className='navbar-brand text-white' href='#home'>
+                    <a className='navbar-brand text-white'>
                         <img src={logo} alt="Logo" className='logo d-flex img-fluid' />
                     </a>
                     <button className='btn btn-dark navbar-toggler border-3 px-2 text-white' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
@@ -24,7 +24,7 @@ export const Navbar = () => {
                         <div className='offcanvas-body p-lg-0'>
                             <ul className='navbar-nav'>
                                 <li className='nav-item'>
-                                    <a className='nav-link' aria-current='page'>Prográmate</a>
+                                    <a className='nav-link' aria-current='page'><span className='programate'>Prográmate</span></a>
                                 </li>
                                 <li className='nav-item'>
                                     <a className='nav-link' aria-current='page'><span className='academy'>Academy</span></a>

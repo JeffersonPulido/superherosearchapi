@@ -1,9 +1,14 @@
-.nav-link{
-    color: white;
+.nav-link {
+  color: white;
 }
 
-.academy{
-    color: var(--yellow-color);
+.academy {
+  color: var(--yellow-color);
+}
+
+.programate {
+  color: white;
+  font-weight: bold;
 }
 
 .logo {
@@ -19,7 +24,7 @@ button.btn.btn-dark.navbar-toggler.border-3.px-2.text-white {
   .logo {
     width: 50% !important;
   }
-  .navbar-brand button{
+  .navbar-brand button {
     display: none !important;
   }
 }
