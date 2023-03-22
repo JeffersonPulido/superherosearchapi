@@ -1,10 +1,11 @@
 import React from 'react'
+import thumbnailInit from '../../images/thumbnail-batman.jpg'
 import './Header.css'
 
 export const Header = () => {
     return (
         <>
-            {/* app header */}
+            {/* Header */}
             <div class="app-header">
                 <h2 class="app-header-title">Super<span>Hero.</span></h2>
                 <form class="app-header-search">
@@ -14,13 +15,13 @@ export const Header = () => {
                         </button>
                         <div class="search-list" id="search-list">
                             <div class="search-list-item">
-                                <img src="assets/images/thumbnail-batman.jpg" alt=""/>
+                                <img src={thumbnailInit} alt="MiniaturaInicial"/>
                                     <p>Batman</p>
                             </div>
                         </div>
                 </form>
             </div>
-            {/* end of app header */}
+            {/* End Header */}
         </>
     )
 }
