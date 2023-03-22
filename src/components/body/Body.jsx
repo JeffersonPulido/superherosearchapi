@@ -5,7 +5,7 @@ export const Body = () => {
   const [heroes, setHeroes] = useState([]);
 
   useEffect(() => {
-    fetch("https://www.superheroapi.com/api.php/812629123100283/search/hulk")
+    fetch("https://www.superheroapi.com/api.php/812629123100283/search/captain")
       .then((response) => response.json())
       .then((data) => setHeroes(data.results))
       .catch((error) => console.log(error));
@@ -23,7 +23,7 @@ export const Body = () => {
             <img data-aos="fade-up" data-aos-delay="300" src={heroe.image["url"]} alt="ImgHeroe" className="imgPortrait" />
           </div>
           <div className="powerstatsData">
-            <p className="powerTitle"><i class="fa-solid fa-shield-halved"></i> PowerStats <i class="fa-solid fa-shield-halved"></i></p>
+            <p className="powerTitle"><i class="fa-solid fa-shield-halved fa-beat-fade"></i> PowerStats <i class="fa-solid fa-shield-halved fa-beat-fade"></i></p>
             <div className="powerDesc">
               <div className="powerItem" data-aos="flip-left" data-aos-delay="300">
                 <p>Intelligence</p>
@@ -53,7 +53,7 @@ export const Body = () => {
           </div>
           <hr className="hr"/>
           <div className="appearanceData">
-            <p className="powerTitle"><i class="fa-solid fa-star"></i> Appearance <i class="fa-solid fa-star"></i></p>
+            <p className="powerTitle"><i class="fa-solid fa-star fa-bounce"></i> Appearance <i class="fa-solid fa-star fa-bounce"></i></p>
             <div className="powerDesc">
               <div className="powerItem" data-aos="flip-right" data-aos-delay="600">
                 <p>Gender</p>
