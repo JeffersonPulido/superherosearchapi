@@ -24,7 +24,10 @@ export const Navbar = () => {
                         <div className='offcanvas-body p-lg-0'>
                             <ul className='navbar-nav'>
                                 <li className='nav-item'>
-                                    <a className='nav-link active' aria-current='page' href='#home'>home</a>
+                                    <a className='nav-link' aria-current='page'>Prográmate</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a className='nav-link' aria-current='page'><span className='academy'>Academy</span></a>
                                 </li>
                             </ul>
                         </div>

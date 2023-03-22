@@ -1,56 +1,28 @@
-@media (min-width: 992px) {
-  .offcanvas {
-    visibility: visible;
-    position: relative;
-    background: none;
-    border: none;
-    justify-content: end;
-    color: red;
-    transition: 1s ease-in-out;
-  }
+.nav-link{
+    color: white;
 }
 
-@media (max-width: 992px) {
-  .offcanvas {
-    width: 250px !important;
-  }
-
-  .offcanvas-start-lg {
-    top: 0;
-    left: 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    transform: translateX(-100%);
-  }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .logo {
-    width: 50% !important;
-  }
-  .navbar > .container {
-    flex-wrap: initial !important;
-  }
+.academy{
+    color: #ffc300;
 }
 
 .logo {
   width: 15%;
 }
 
-.navbar-nav li a {
-  color: white !important;
-}
 
-.navbar {
-  padding: 0 !important;
-  transition: 1s ease-in-out !important;
+/* MOBILE */
+@media (max-width: 768px) {
+  .logo {
+    width: 50% !important;
+  }
+  .navbar-brand button{
+    display: none;
+  }
 }
 
 /* TABLET */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
-  .navbar > .container {
-    flex-wrap: initial;
-  }
   .logo {
     width: 30%;
   }
