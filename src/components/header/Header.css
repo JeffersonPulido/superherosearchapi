@@ -29,6 +29,7 @@
 
 .inputField::placeholder{
     color: rgb(192, 191, 191);
+    letter-spacing: .2vh;
 }
 
 /* MOBILE */
@@ -44,4 +45,8 @@
   .inputField{
     width: 38rem;
   }
+  .inputField::placeholder{
+    color: rgb(192, 191, 191);
+    letter-spacing: 0vh;
+}
 }
