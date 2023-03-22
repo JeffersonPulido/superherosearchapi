@@ -29,7 +29,7 @@ export const Body = () => {
                 <img data-aos="fade-up" data-aos-delay="300" src={heroe.image["url"]} alt="ImgHeroe" className="imgPortrait" />
               </div>
               <div className="powerstatsData">
-                <p className="powerTitle"><i class="fa-solid fa-shield-halved fa-beat-fade"></i> PowerStats <i class="fa-solid fa-shield-halved fa-beat-fade"></i></p>
+                <p className="powerTitle"><i className="fa-solid fa-shield-halved fa-beat-fade"></i> PowerStats <i className="fa-solid fa-shield-halved fa-beat-fade"></i></p>
                 <div className="powerDesc">
                   <div className="powerItem" data-aos="flip-left" data-aos-delay="300">
                     <p>Intelligence</p>
@@ -59,7 +59,7 @@ export const Body = () => {
               </div>
               <hr className="hr"/>
               <div className="appearanceData">
-                <p className="powerTitle"><i class="fa-solid fa-star fa-bounce"></i> Appearance <i class="fa-solid fa-star fa-bounce"></i></p>
+                <p className="powerTitle"><i className="fa-solid fa-star fa-bounce"></i> Appearance <i className="fa-solid fa-star fa-bounce"></i></p>
                 <div className="powerDesc">
                   <div className="powerItem" data-aos="flip-right" data-aos-delay="600">
                     <p>Gender</p>
@@ -95,8 +95,8 @@ export const Body = () => {
   }else{
     return (
       <>
-        <div>
-          <h1>¡Es hora de buscar un superhéroe!</h1>
+        <div className="error">
+          <h1>¡Ha ocurrido un error, Discúlpanos! :(</h1>
         </div>
       </>
     )
