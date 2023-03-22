@@ -10,6 +10,9 @@
   width: 15%;
 }
 
+button.btn.btn-dark.navbar-toggler.border-3.px-2.text-white {
+  display: none;
+}
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -17,7 +20,7 @@
     width: 50% !important;
   }
   .navbar-brand button{
-    display: none;
+    display: none !important;
   }
 }
 

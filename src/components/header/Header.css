@@ -1,6 +1,6 @@
 .containerTitle {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   margin: 2.5vh 0%;
@@ -16,11 +16,19 @@
   color: var(--yellow-color);
 }
 
-.fa-magnifying-glass {
-  color: white;
-  font-weight: bold;
-  font-size: 5vh;
-  margin-right: 2%;
+.inputField{
+    width: 50rem;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 0% 5%;
+    text-transform: capitalize;
+}
+
+.inputField::placeholder{
+    color: rgb(192, 191, 191);
 }
 
 /* MOBILE */
@@ -30,7 +38,10 @@
     font-weight: bold;
     font-size: 3vh;
   }
-  .fa-magnifying-glass {
-    font-size: 3vh;
+  .containerTitle{
+    flex-direction: column;
+  }
+  .inputField{
+    width: 38rem;
   }
 }
