@@ -1,67 +1,20 @@
-export const SHOW_HEROES = "SHOW_HEROES"
+import axios from "axios";
 
-export function showHeroes(){
-    /*
-    ==head==
-    name
-    image
-    fullname
-    ==Atributos==
-    Intelligence
-    Strength
-    Speed
-    Durability
-    Power
-    Combat
-    ==APARIENCIA==
-    Gender
-    Race
-    Height
-    Weight
-    Eye Color
-    Hair Color
-    */
-    const heroes = [
-        {
-            id: 1, 
-            name: 'Ironman',
-            image: 'img.com/asd',
-            fullname: 'Tony Stark',
-            Intelligence: '100',
-            Strength: '100',
-            Speed: '100',
-            Durability: '100',
-            Power: '100',
-            Combat: '100',
-            Gender: '',
-            Race: '100',
-            Height: '198 cm',
-            Weight: ' 191 kg',
-            EyeColor: 'Blue',
-            HairColor: 'Black'
-        },
-        {
-            id: 2, 
-            name: 'Capitan America',
-            image: 'img.com/asd',
-            fullname: 'Tony Stark',
-            Intelligence: '100',
-            Strength: '100',
-            Speed: '100',
-            Durability: '100',
-            Power: '100',
-            Combat: '100',
-            Gender: '',
-            Race: '100',
-            Height: '198 cm',
-            Weight: ' 191 kg',
-            EyeColor: 'Blue',
-            HairColor: 'Black'
-        }
-    ]
+export const FETCH_DATA_REQUEST = "FETCH_DATA_REQUEST";
+export const FETCH_DATA_SUCCESS = "FETCH_DATA_SUCCESS";
+export const FETCH_DATA_FAILURE = "FETCH_DATA_FAILURE";
 
-    return {
-        type: "SHOW_HEROES",
-        payload: heroes
-    }
-}
+export const fetchData = () => {
+  return (dispatch) => {
+    dispatch({ type: FETCH_DATA_REQUEST });
+    axios
+      .get("https://www.superheroapi.com/api.php/812629123100283/search/ironman")
+      .then((response) => {
+        const data = response.data;
+        dispatch({ type: FETCH_DATA_SUCCESS, payload: data });
+      })
+      .catch((error) => {
+        dispatch({ type: FETCH_DATA_FAILURE, payload: error.message });
+      });
+  };
+};

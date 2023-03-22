@@ -6,7 +6,7 @@ export const Header = () => {
         <>
             <div className="containerTitle">
                 <div className='title'>
-                    <h1><i class="fa-solid fa-magnifying-glass"></i> Super<span>heroes</span></h1>
+                    <h1><i className="fa-solid fa-magnifying-glass"></i> Super<span>heroes</span></h1>
                 </div>
                 <div className='containerSearch'>
                     <form>
