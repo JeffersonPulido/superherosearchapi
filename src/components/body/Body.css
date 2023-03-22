@@ -4,12 +4,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2%;
-    border: 2px solid white;
     margin: 0% 2%;
     border-radius: 10px;
     padding: 2%;
-    box-shadow: 0px 0px 10px var(--yellow-color);
-    background-color: #232323;
 }
 
 .cardData {
@@ -19,7 +16,7 @@
     box-shadow: 0px 0px 10px var(--yellow-color);
     display: flex;
     flex-direction: column;
-    background-color: #535353;
+    background-color: #3b3939;
 }
 
 .headData {
@@ -56,10 +53,6 @@
     width: 30%;
     border: 2px solid var(--yellow-color);
     border-radius: 10px;
-}
-
-.powerstatsData {
-    margin: 5% 0%;
 }
 
 p.powerTitle {

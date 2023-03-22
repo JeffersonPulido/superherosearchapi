@@ -18,15 +18,46 @@
   cursor: default;
 }
 
+::-webkit-scrollbar{
+	width: 5px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track{
+	background: #232323;
+}
+::-webkit-scrollbar-thumb{
+	background: #ffffff;
+    border-radius: 5px;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   font-size: 1.7rem;
-  min-height: 100vh;
   line-height: 1.6;
   font-family: var(--chakra-font);
   background: rgb(73,80,87);
-  background: linear-gradient(180deg, rgba(73,80,87,1) 0%, rgba(34,34,34,1) 50%, rgba(73,80,87,1) 100%);
+  background: linear-gradient(180deg, rgb(49, 80, 112) 0%, rgba(34,34,34,1) 50%, rgb(112, 49, 49) 100%);
+  /* margin-bottom: 10vh; */
+  min-height: 100vh;
+}
+
+hr.hr {
+  background-color: var(--yellow-color);
+  opacity: .5;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 10%;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border: none;
+  height: 2px;
+  border-radius: 50%;
 }
