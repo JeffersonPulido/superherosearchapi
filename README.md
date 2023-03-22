@@ -19,7 +19,7 @@ Para desplegar este proyecto:
 
 ## Demo
 
-https://searchheroes.netlify.app
+https://searchheroesapi.netlify.app
 
 
 ## API Reference
