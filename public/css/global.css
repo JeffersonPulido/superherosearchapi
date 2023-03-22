@@ -14,7 +14,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 
 html {
@@ -24,41 +24,8 @@ html {
 body {
   font-size: 1.7rem;
   min-height: 100vh;
-  background: var(--red-color);
-  background: rgb(6, 6, 6);
-  background: radial-gradient(
-    circle,
-    rgba(6, 6, 6, 1) 20%,
-    rgba(50, 8, 8, 1) 43%,
-    rgba(79, 25, 25, 1) 62%,
-    rgba(78, 24, 24, 1) 78%,
-    rgba(68, 54, 54, 1) 100%
-  );
   line-height: 1.6;
   font-family: var(--chakra-font);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.main-wrapper {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.app {
-  background-color: var(--dark-color);
-  margin: 2rem;
-  padding: 5rem;
-  border-radius: 6px;
-  color: #fff;
-  -webkit-box-shadow: 0px 5px 11px 5px rgb(255, 255, 255);
-  box-shadow: 0px 5px 11px 5px rgb(255, 255, 255);
+  background: rgb(73,80,87);
+  background: linear-gradient(90deg, rgba(73,80,87,1) 0%, rgba(34,34,34,1) 50%, rgba(73,80,87,1) 100%);
 }
