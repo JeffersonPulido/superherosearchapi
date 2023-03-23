@@ -9,6 +9,8 @@ export const Body = () => {
   const [heroes, setHeroes] = useState([]);
   //State con buscador
   const [busqueda, setBusqueda] = useState("");
+  //State contador
+  const [counterUser, setcounterUser] = useState(0);
   //evento de Enter que dispara el fetch de la API con el valor especifico
   const handleEnter = (event) => {
     if (event.key === 'Enter') {
@@ -22,9 +24,14 @@ export const Body = () => {
       .then((data) => setHeroes(data.results))
       .catch((error) => console.log(error));
       setBusqueda(valueInput)
+      counterHeroes()
     }
   };
 
+  const counterHeroes = () => {
+    setcounterUser(heroes.length)
+  }
+  
   if (busqueda != "") {
     return (
       <>
@@ -32,9 +39,9 @@ export const Body = () => {
           <div className='title'>
             <h1><i className="fa-solid fa-magnifying-glass"></i> Super<span>heroes</span></h1>
           </div>
-          {/* <div className="counter">
+          <div className="counter">
             <h3>Heroes encontrados: </h3><h3 className="counterVar">{counterUser}</h3>
-          </div> */}
+          </div>
           <div className='containerSearch'>
             <input type='text' id="inputHeroe" className='inputField' placeholder='Ingresa aqui el nombre de tu superheroe...' onKeyDown={handleEnter} />
           </div>
@@ -120,9 +127,9 @@ export const Body = () => {
           <div className='title'>
             <h1><i className="fa-solid fa-magnifying-glass"></i> Super<span>heroes</span></h1>
           </div>
-          {/* <div className="counter">
+          <div className="counter">
             <h3>Heroes encontrados: </h3><h3 className="counterVar">{counterUser}</h3>
-          </div> */}
+          </div>
           <div className='containerSearch'>
             <input type='text' id="inputHeroe" className='inputField' placeholder='Ingresa aqui el nombre de tu superheroe...' onKeyDown={handleEnter}/>
           </div>
