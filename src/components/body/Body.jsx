@@ -2,22 +2,41 @@ import React, { useState, useEffect } from "react";
 import "./Body.css";
 
 export const Body = () => {
-  const [heroes, setHeroes] = useState([]);
 
-  useEffect(() => {
-    fetch("https://www.superheroapi.com/api.php/812629123100283/search/captain").then((response) => {
+  //State inicial de la API search/names
+  const [heroes, setHeroes] = useState([]);
+  //State con buscador
+  const [busqueda, setBusqueda] = useState("");
+  //evento de Enter que dispara el fetch de la API con el valor especifico
+  const handleEnter = (event) => {
+    if (event.key === 'Enter') {
+      const valueInput = event.target.value
+      fetch(`https://www.superheroapi.com/api.php/812629123100283/search/${valueInput}`).then((response) => {
       if (response.ok) {
         return response.json();
       }
-      throw new Error('Something went wrong');
-    })
-    .then((data) => setHeroes(data.results))
-    .catch((error) => setHeroes(error));
-  }, []);
+        throw new Error('Something went wrong');
+      })
+      .then((data) => setHeroes(data.results))
+      .catch((error) => console.log(error));
+      setBusqueda(valueInput)
+    }
+  };
 
-  if (heroes != 1) {
+  if (busqueda != "") {
     return (
       <>
+        <div className="containerTitle">
+          <div className='title'>
+            <h1><i className="fa-solid fa-magnifying-glass"></i> Super<span>heroes</span></h1>
+          </div>
+          {/* <div className="counter">
+            <h3>Heroes encontrados: </h3><h3 className="counterVar">{counterUser}</h3>
+          </div> */}
+          <div className='containerSearch'>
+            <input type='text' id="inputHeroe" className='inputField' placeholder='Ingresa aqui el nombre de tu superheroe...' onKeyDown={handleEnter} />
+          </div>
+        </div>
         <div className="containerData">
           {heroes.map((heroe) => (
             <div className="cardData" data-aos="flip-left" data-aos-delay="100">
@@ -95,8 +114,19 @@ export const Body = () => {
   }else{
     return (
       <>
+        <div className="containerTitle">
+          <div className='title'>
+            <h1><i className="fa-solid fa-magnifying-glass"></i> Super<span>heroes</span></h1>
+          </div>
+          {/* <div className="counter">
+            <h3>Heroes encontrados: </h3><h3 className="counterVar">{counterUser}</h3>
+          </div> */}
+          <div className='containerSearch'>
+            <input type='text' id="inputHeroe" className='inputField' placeholder='Ingresa aqui el nombre de tu superheroe...' onKeyDown={handleEnter}/>
+          </div>
+        </div>
         <div className="error">
-          <h1>¡Ha ocurrido un error, Discúlpanos! :(</h1>
+          <h1>Bienvenido, ¡es hora de buscar tu héroe!</h1>
         </div>
       </>
     )

@@ -7,28 +7,27 @@
   --light-color: #fff;
   --grey-color: #888888;
   --yellow-color: #ffc300;
+  --yellowdark-color: #6e0000;
 }
 
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: default;
 }
 
-::-webkit-scrollbar{
-	width: 5px;
-    height: 0;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
 }
 
-::-webkit-scrollbar-track{
-	background: #232323;
+::-webkit-scrollbar-track {
+  background: #232323;
 }
-::-webkit-scrollbar-thumb{
-	background: #ffffff;
-    border-radius: 5px;
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
 }
 
 html {
@@ -39,15 +38,20 @@ body {
   font-size: 1.7rem;
   line-height: 1.6;
   font-family: var(--chakra-font);
-  background: rgb(73,80,87);
-  background: linear-gradient(180deg, rgb(49, 80, 112) 0%, rgba(34,34,34,1) 50%, rgb(112, 49, 49) 100%);
+  background: rgb(73, 80, 87);
+  background: linear-gradient(
+    180deg,
+    rgb(49, 80, 112) 0%,
+    rgba(34, 34, 34, 1) 50%,
+    rgb(112, 49, 49) 100%
+  );
   /* margin-bottom: 10vh; */
   min-height: 100vh;
 }
 
 hr.hr {
   background-color: var(--yellow-color);
-  opacity: .5;
+  opacity: 0.5;
   width: 80%;
   display: flex;
   justify-content: center;
