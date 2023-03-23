@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import logoProgramate from '../../images/image.webp'
+import logoJpulido from '../../images/sello.webp'
 import "./Body.css";
 
 export const Body = () => {
@@ -127,6 +129,10 @@ export const Body = () => {
         </div>
         <div className="error">
           <h1>Bienvenido, ¡es hora de buscar tu héroe!</h1>
+        </div>
+        <div className="containerLogos">
+          <img src={logoProgramate} className="logoProgramate" alt="LogoProgramate" />
+          <img src={logoJpulido} className="logoProgramate" alt="LogoProgramate" />
         </div>
       </>
     )

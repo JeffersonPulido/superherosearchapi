@@ -1,5 +1,4 @@
 import React from 'react'
-import logoClose from '../../images/closeNavbar.svg'
 import logo from '../../images/sello.webp'
 import './Navbar.css'
 
@@ -18,7 +17,6 @@ export const Navbar = () => {
                         <div className='offcanvas-header d-flex d-lg-none'>
                             <h5 className='offcanvas-title text-white' id='offcanvasExampleLabel'>JPulido Dev</h5>
                             <a href='javascript:void(0)' className='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
-                                <img src={logoClose} alt="Icon Close Navbar" />
                             </a>
                         </div>
                         <div className='offcanvas-body p-lg-0'>
